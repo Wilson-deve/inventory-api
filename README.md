@@ -42,9 +42,9 @@ MONGODB_URI=mongodb://<username>:<password>@cluster0.mongodb.net/mydatabase?retr
 
 Replace `<username>`, `<password>`, and `mydatabase` with your actual MongoDB credentials and database name.
 
-### 6. Create the Server File
+### 6. Create the Server in index.js
 
-Open `server.js` and set up your Express server.
+Open `src/index.js` and set up your Express server.
 
 ### 7. Create the Inventory Model
 
@@ -63,7 +63,7 @@ In `routes/inventory.js`, set up your routes.
 Make sure your MongoDB server is running (if local) or that you have access to your MongoDB Atlas cluster. Then, start your application:
 
 ```
-node server.js
+npm start
 ```
 
 You should see a message indicating that the server is running and connected to MongoDB.
