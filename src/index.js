@@ -18,7 +18,7 @@ app.use("/api/v1/inventory", inventoryRoutes);
 
 const startServer = async () => {
   try {
-    await connectDB(process.env.MONGO_URI);
+    await connectDB(process.env.MONGODB_URI);
     const port = process.env.PORT || 5000;
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
